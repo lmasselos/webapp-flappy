@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paratrooper</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+</head>
+
+
+
+<body>
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Paratrooper</h1>
+        <p>Are you UP to the challenge?</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-4">
+            <p id="gameLink">
+                <a href="example.html">
+                    <img src="../assets/parachuter.png" class="img-responsive"/>
+                </a>
+            </p>
+        </div>
+
+        <div class="col-xs-4">
+            <div id="greeting">
+                <h3>Save your score</h3>
+                <form id="greeting-form" method="post" action="/score">
+                    <div class="form-group">
+
+                    <label for="fullName">What's your name?</label>
+                    <input type="text" id="fullName"
+                           name="fullName" class="form-control" placeholder="enter here" required>
+
+                        <label for="email">What's your email?</label>
+                        <input type="email" id="email" class="form-control"
+                               name="email" placeholder="example@mail.com">
+
+                        <input type="hidden" id="score" name="score" value="0">
+                    </div>
+
+                    <button class="btn btn-default" type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+                <p>High Scores:</p>
+                <ul id="scoreBoard">
+                </ul>
+        </div>
+     </div>
+</div>
+
+<div id="game" style="width:1000px; margin:0 auto;"></div>
+
+
+<div id="footer">
+    <p>&copy; Cambridge Coding Academy</p>
+</div>
+
+
+
+<script src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../lib/phaser.min.js"></script>
+<script type="text/javascript" src="../js/flappy.js"></script>
+
+</body>
+
+</html>

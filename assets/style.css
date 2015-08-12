@@ -1,0 +1,44 @@
+h1 {
+    color: #67b168;
+    font-size: 40px;
+    font-family: "Helvetica Neue";
+}
+
+.gold {
+    color: gold;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+}
+
+.silver {
+    color: #c0c0c0;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+}
+
+.bronze {
+    color: coral;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+}
+
+#gameLink {
+    text-align: center;
+}
+
+.gameLink {
+    align-content: center;
+}
+
+#greeting{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 45000%;
+    background: #fff;
+    width: 400px;
+    height: 250px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
